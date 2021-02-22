@@ -50,21 +50,20 @@ def isWordGuessed(secretWord, lettersGuessed):
     returns: boolean, True if all the letters of secretWord are in lettersGuessed;
       False otherwise
     '''
-    for i in secretWord:
-        if i in lettersGuessed:
-            print(i)
-            return True
-        else:
+
+    for letter in secretWord:
+        if  not letter in lettersGuessed:
             return False
+    return True
+for i in secretWord:
+    sp
+Function call: isWordGuessed('apple', ['a', 'e', 'i', 'k', 'p', 'r', 's'])
+
+runpro(a)
 
 
-    for i in lettersGuessed:
-        if i lettersGuessed
-
-
-secretWord = 'apple'
-lettersGuessed = ['e', 'i', 'k', 'p', 'r', 's']
-
+behram = True
+behram and runpro()
 
 def getGuessedWord(secretWord, lettersGuessed):
     '''
