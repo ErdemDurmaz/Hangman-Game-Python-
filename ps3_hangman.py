@@ -67,9 +67,13 @@ def getGuessedWord(secretWord, lettersGuessed):
     print(getGuessedWord(secretWord, lettersGuessed))
     _ pp_ e
     '''
-
-    # FILL IN YOUR CODE HERE...
-
+    result = ''
+    for letter in secretWord:
+        if not letter in lettersGuessed:
+            result += '_ '
+        else:
+            result += letter
+    return result
 
 
 def getAvailableLetters(lettersGuessed):
