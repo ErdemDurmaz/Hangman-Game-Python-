@@ -6,7 +6,7 @@
 # You don't need to understand this helper code,
 # but you will have to know how to use the functions
 # (so be sure to read the docstrings!)
-
+import string
 import random
 
 WORDLIST_FILENAME = "words.txt"
@@ -82,7 +82,14 @@ def getAvailableLetters(lettersGuessed):
     returns: string, comprised of letters that represents what letters have not
       yet been guessed.
     '''
-    # FILL IN YOUR CODE HERE...
+    all_letters = ["a ,b, c, d, e, f ,g ,h ,i ,j ,k, l,m ,n, o, p, q, r, s, t, u ,v, w, x, y, z"]
+    for letter in all_letters:
+        notguessedletters = ''
+        if  letter in lettersGuessed:
+
+            notguessedletters += letter
+
+
     
 
 def hangman(secretWord):
@@ -106,7 +113,7 @@ def hangman(secretWord):
     Follows the other limitations detailed in the problem write-up.
     '''
     # FILL IN YOUR CODE HERE...
-
+    
 
 
 
