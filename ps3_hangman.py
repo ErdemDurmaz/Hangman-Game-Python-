@@ -1,5 +1,4 @@
-# Hangman game
-#
+# Hangman gam
 
 # -----------------------------------
 # Helper code
@@ -14,7 +13,7 @@ WORDLIST_FILENAME = "words.txt"
 def loadWords():
     """
     Returns a list of valid words. Words are strings of lowercase letters.
-    
+
     Depending on the size of the word list, this function may
     take a while to finish.
     """
@@ -67,6 +66,7 @@ def getGuessedWord(secretWord, lettersGuessed):
     print(getGuessedWord(secretWord, lettersGuessed))
     _ pp_ e
     '''
+    
     result = ''
     for letter in secretWord:
         if not letter in lettersGuessed:
@@ -81,41 +81,43 @@ def getAvailableLetters(lettersGuessed):
     lettersGuessed: list, what letters have been guessed so far
     returns: string, comprised of letters that represents what letters have not
       yet been guessed.
+
+
+
     '''
     all_letters = ["a ,b, c, d, e, f ,g ,h ,i ,j ,k, l,m ,n, o, p, q, r, s, t, u ,v, w, x, y, z"]
     for letter in all_letters:
-        notguessedletters = ''
-        if  letter in lettersGuessed:
+      if letter in lettersGuessed:
+        all_letters.remove(letter)
+    return all_letters
+      #if letter in letters gues remove the indent from all letters
+         
 
-            notguessedletters += letter
 
 
-    
 
 def hangman(secretWord):
+
     '''
     secretWord: string, the secret word to guess.
 
     Starts up an interactive game of Hangman.
 
-    * At the start of the game, let the user know how many 
+    * At the start of the game, let the user know how many
       letters the secretWord contains.
 
     * Ask the user to supply one guess (i.e. letter) per round.
 
-    * The user should receive feedback immediately after each guess 
+    * The user should receive feedback immediately after each guess
       about whether their guess appears in the computers word.
 
-    * After each round, you should also display to the user the 
-      partially guessed word so far, as well as letters that the 
+    * After each round, you should also display to the user the
+      partially guessed word so far, as well as letters that the
       user has not yet guessed.
 
     Follows the other limitations detailed in the problem write-up.
     '''
     # FILL IN YOUR CODE HERE...
-    
-
-
 
 
 
